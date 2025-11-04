@@ -1,0 +1,78 @@
+/* Software Expertise Section */
+.Software-expertise {
+  background: #ffffff;           /* light neutral background */
+  color: #222;
+  padding: 80px 20px;            /* spacing around section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.Software-expertise-inner {
+  display: flex;
+  flex-direction: column;   /* stack title on top, images below */
+  align-items: flex-start;  /* align the title to the left */
+  text-align: left;         /* align text left inside the section */
+  width: 100%;
+}
+
+.Software-expertise-inner h1 {
+  margin: 0 0 20px;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-family: 'Jersey 10', sans-serif;
+  color: #0098ff;
+  margin-left: 100px;
+}
+
+.software-images {
+  display: flex;
+  justify-content: center;  /* center images horizontally */
+  align-items: center;
+  flex-wrap: wrap;          /* wrap on smaller screens */
+  gap: 80px;
+  width: 100%;
+}
+
+.software-images img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.software-images img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive */
+@media (max-width: 800px) {
+  .Software-expertise {
+    padding: 60px 16px;
+  }
+
+  .Software-expertise img {
+    max-width: 100%;
+  }
+
+  .Software-expertise-inner h1{
+    font-size: 3rem;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .Software-expertise {
+    padding: 60px 16px;
+  }
+
+  .Software-expertise img {
+    max-width: 100%;
+  }
+
+  .Software-expertise-inner h1{
+    font-size: 3rem;
+    justify-content: center;
+  }
+}
