@@ -273,7 +273,7 @@
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .lightbox-content {
     max-width: 90%;
     max-height: 70vh;
@@ -346,3 +346,4 @@
     margin-bottom: 10px;
   }
 }
+
