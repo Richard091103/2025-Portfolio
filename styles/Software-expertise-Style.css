@@ -1,8 +1,8 @@
 /* Software Expertise Section */
 .Software-expertise {
-  background: #ffffff;           /* light neutral background */
+  background: #ffffff;
   color: #222;
-  padding: 80px 20px;            /* spacing around section */
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,9 +11,9 @@
 
 .Software-expertise-inner {
   display: flex;
-  flex-direction: column;   /* stack title on top, images below */
-  align-items: flex-start;  /* align the title to the left */
-  text-align: left;         /* align text left inside the section */
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
   width: 100%;
 }
 
@@ -28,26 +28,60 @@
 
 .software-images {
   display: flex;
-  justify-content: center;  /* center images horizontally */
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;          /* wrap on smaller screens */
+  flex-wrap: wrap;
   gap: 80px;
   width: 100%;
 }
 
-.software-images img {
+/* Each software item */
+.software-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.software-item img {
   width: 100px;
   height: auto;
   transition: transform 0.3s;
 }
 
-.software-images img:hover {
+.software-item img:hover {
   transform: scale(1.1);
 }
 
+/* Text container under each image */
+.software-text {
+  margin-top: 10px;
+}
+
+.software-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.software-skill {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Star color styling */
+.fa-star {
+  font-size: 1.2rem;
+  color: #ccc; /* default grey for unfilled */
+}
+
+.checked {
+  color: orange; /* gold/orange for filled stars */
+}
 
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .Software-expertise {
     padding: 60px 16px;
   }
@@ -56,9 +90,17 @@
     max-width: 100%;
   }
 
-  .Software-expertise-inner h1{
+  .Software-expertise-inner h1 {
     font-size: 3rem;
     margin-left: 50px;
+  }
+
+  .software-name {
+    font-size: 1rem;
+  }
+
+  .software-skill {
+    font-size: 0.9rem;
   }
 }
 
@@ -71,7 +113,7 @@
     max-width: 100%;
   }
 
-  .Software-expertise-inner h1{
+  .Software-expertise-inner h1 {
     font-size: 3rem;
     justify-content: center;
   }
